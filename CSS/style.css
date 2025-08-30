@@ -1,0 +1,275 @@
+/* Global Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+/* Top Bar */
+.topBar {
+	background: #f8f8f8;
+	display: flex;
+	justify-content: space-between;
+}
+
+.topBar .logo {
+	width: 20%;
+}
+.topBar .logo img {
+	width: 45%;
+	height: auto;
+}
+
+.topBar ul {
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+}
+.topBar li {
+	margin: 0 15px;
+	font-size: 20px;
+}
+.topBar li:last-child {
+	color: red;
+	font-weight: bold;
+}
+.topBar a {
+	text-decoration: none;
+	color: #333;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+/* Main Bar */
+.mainBar {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0;
+}
+
+.call_us {
+	display: flex;
+	align-items: center;
+	margin: 10px 0 0 100px;
+	text-align: center;
+}
+.call_us .tele_icon {
+	margin-right: 10px;
+}
+.call_us .tele_icon i {
+	font-size: 24px;
+	color: #333;
+}
+.call_us .call_info {
+	display: flex;
+	align-items: center;
+	margin-left: 10px;
+}
+.call_us .call_info p {
+	margin: 0 20px 0 0;
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.call_us .call_info img {
+	width: 100px;
+	height: 100px;
+	margin-left: 10px;
+}
+
+/* Nav Bar */
+.navBar {
+	background: #f8f8f8;
+	padding: 10px 0;
+	display: flex;
+	align-items: stretch;
+}
+.navBar ul {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+}
+.navBar ul li {
+	flex-grow: 1;
+	padding: 20px 50px;
+	border-top: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+.navBar ul li:first-child {
+	border-left: none;
+}
+.navBar ul li:last-child {
+	border-right: none;
+	background: rgb(255, 165, 0);
+}
+.navBar a {
+	text-decoration: none;
+	color: #333;
+	font-weight: bold;
+	text-transform: uppercase;
+	transition: color 0.2s ease-in-out;
+}
+.navBar a:hover {
+	color: red;
+}
+.navBar a span {
+	margin-left: 5px;
+	color: red;
+	font-weight: bold;
+}
+.navBar a.dropdown {
+	display: flex;
+}
+
+/* Start Order Button */
+.start {
+	position: relative;
+	top: -75px;
+	left: 823px;
+	width: 39.11%;
+	padding: 20px 40px;
+	text-align: center;
+
+	background: rgb(200, 16, 46);
+	color: #fff;
+	font-weight: bold;
+	font-size: 18px;
+	text-transform: uppercase;
+	display: block;
+	border-radius: 5px;
+	box-shadow: 10px 4px 8px 10px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+.start a {
+	color: inherit;
+	text-decoration: none;
+	font-size: 30px;
+}
+
+/* Header */
+.header {
+	position: relative;
+	margin-top: -85px;
+	width: 100%;
+	margin-bottom: 0;
+}
+.header_image {
+	position: relative;
+	width: 100%;
+}
+.header_image img {
+	width: 100%;
+	display: block;
+}
+.header .overlay {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 4px;
+
+	background: rgba(0, 0, 0, 0.5);
+	height: 50px;
+	padding: 10px;
+}
+.header .overlay ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+.header .overlay li {
+	font-weight: bold;
+	text-transform: uppercase;
+	padding-bottom: 5px;
+}
+.header .overlay li:first-of-type {
+	border-bottom: 4px solid rgb(237, 28, 36);
+}
+.header .overlay a {
+	color: #fff;
+	text-decoration: none;
+}
+.header .overlay li:hover {
+	border-bottom: 4px solid rgb(237, 28, 36);
+}
+.header .overlay li:hover  a{
+	color: rgb(237, 28, 36);
+}
+/* Card Section */
+.card_section {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 50px 0;
+	background: rgb(232, 232, 232);
+}
+.card_section .card {
+	display: flex;
+	width: 48%;
+	margin: 10px;
+	padding: 20px;
+
+	background: #fff;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+}
+.card_info {
+	text-align: center;
+}
+.card_price {
+	font-size: 24px;
+	font-weight: bold;
+	color: #333;
+}
+.card_details {
+	padding: 10px;
+}
+.card_details h3 {
+	margin: 10px 0;
+	font-size: 20px;
+	font-weight: bold;
+	color: rgb(200, 16, 46);
+}
+.card_details p {
+	line-height: 1.4;
+}
+.card_details .selection {
+	display: flex;
+	margin: 10px 0;
+}
+.card_details .selection select {
+	width: 50%;
+	padding: 10px;
+	margin-right: 10px;
+}
+.customize_button,
+.order_button {
+	display: inline-block;
+	padding: 10px 20px;
+	margin: 10px 0;
+	border: none;
+	border-radius: 5px;
+	font-weight: bold;
+	text-transform: uppercase;
+	cursor: pointer;
+	text-decoration: none;
+	color: #fff;
+}
+.customize_button {
+	background: grey;
+}
+.order_button {
+	background: rgb(200, 16, 46);
+	padding: 30px;
+	font-size: 15px;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.card_price {
+	font-size: 24px;
+	font-weight: bold;
+	color: #333;
+	margin-top: 60px;
+}
